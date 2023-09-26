@@ -8,20 +8,15 @@ package centroadopcion;
  *
  * @author Juan Diego
  */
-public class Loro {
-    int edad,peso,id;
-    String nombre;
+public class Loro extends Mascota {
+
+    public Loro(int edad, int peso, int id, String nombre, String raza, String comida, String tipo, boolean vacunado) {
+        super(edad, peso, id, nombre, raza, comida, tipo, vacunado);
+    }
 
     public Loro() {
     }
 
-    public Loro(int edad, int peso, int id, String nombre) {
-        this.edad = edad;
-        this.peso = peso;
-        this.id = id;
-        this.nombre = nombre;
-    }
-    
     
     
 }

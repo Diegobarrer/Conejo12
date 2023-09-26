@@ -8,20 +8,15 @@ package centroadopcion;
  *
  * @author Juan Diego
  */
-public class Conejo {
-    int edad,peso,id;
-    String nombre;
+public class Conejo extends Mascota{
+
+    public Conejo(int edad, int peso, int id, String nombre, String raza, String comida, String tipo, boolean vacunado) {
+        super(edad, peso, id, nombre, raza, comida, tipo, vacunado);
+    }
 
     public Conejo() {
     }
 
-    public Conejo(int edad, int peso, int id, String nombre) {
-        this.edad = edad;
-        this.peso = peso;
-        this.id = id;
-        this.nombre = nombre;
-    }
-    
-    
+
     
 }

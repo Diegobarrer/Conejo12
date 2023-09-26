@@ -8,20 +8,16 @@ package centroadopcion;
  *
  * @author Juan Diego
  */
-public class Gato {
-    int edad,peso,id;
-    String nombre;
+public class Gato extends Mascota {
+
+    public Gato(int edad, int peso, int id, String nombre, String raza, String comida, String tipo, boolean vacunado) {
+        super(edad, peso, id, nombre, raza, comida, tipo, vacunado);
+    }
 
     public Gato() {
     }
 
-    public Gato(int edad, int peso, int id, String nombre) {
-        this.edad = edad;
-        this.peso = peso;
-        this.id = id;
-        this.nombre = nombre;
-    }
-  
+
     
 }
     
